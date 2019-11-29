@@ -17,16 +17,11 @@ import java.net.Socket;
 public class LengthCalculator extends Thread{
 
 	private Socket socket;
-	/**
-	 * @param socket
-	 */
+	
 	public LengthCalculator(Socket socket) {
 		this.socket  = socket;
 	}
 
-	/**
-	 * 
-	 */
 	public void run() {
 		try {
 			OutputStream os  = socket.getOutputStream();//输出流
@@ -47,7 +42,5 @@ public class LengthCalculator extends Thread{
 		}catch(IOException e){
 			e.printStackTrace();
 		}
-		
 	}
-
 }

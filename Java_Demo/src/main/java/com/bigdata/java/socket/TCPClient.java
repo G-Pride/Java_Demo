@@ -38,5 +38,4 @@ public class TCPClient {
 		os.close();
 		socket.close();
 	}
-
 }

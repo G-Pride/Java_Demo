@@ -33,5 +33,4 @@ public class UDPServer {
 		DatagramPacket packetToClient = new DatagramPacket(sendedContent,sendedContent.length,packet.getAddress(),packet.getPort());
 		socket.send(packetToClient);//发送数据给客户端
 	}
-
 }

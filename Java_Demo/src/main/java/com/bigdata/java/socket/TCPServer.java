@@ -28,5 +28,4 @@ public class TCPServer {
 			new LengthCalculator(socket).start();
 		}
 	}
-
 }
